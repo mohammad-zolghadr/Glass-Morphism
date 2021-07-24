@@ -1,0 +1,42 @@
+html{
+	height : 100%;
+}
+
+body{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background:linear-gradient(130deg , #111111 , #000000);
+	height:100%;
+	margin : 0;
+}
+
+.circle{
+	border-radius : 50%;
+	position:absolute;
+	z-index:-1;
+}
+
+.circle1{
+	transform: translate(200px , -50px);
+	height: 360px;
+	width : 360px;
+	background : linear-gradient(90deg , #00ffdd , #2a5353)
+}
+
+.circle2{
+	transform: translate(-160px , 120px);
+	height: 270px;
+	width : 270px;
+	background : linear-gradient(90deg , #ff00b3 , #4a51e2)
+}
+
+.circle3{
+	transform: translate(-260px , -160px);
+	height: 150px;
+	width : 150px;
+	background : linear-gradient(90deg , #ff7b00 , #ff0000)
+}
+
+
+

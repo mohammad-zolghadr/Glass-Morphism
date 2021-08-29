@@ -17,27 +17,62 @@ body{
 	z-index:-1;
 }
 
+@keyframes circle1 {
+	0%   {background: rgb(41, 152, 160);right: 460px; top: 120px;}
+  25%  {background: rgb(0, 255, 115);right: 400px; top: 150px;}
+  50%  {background: rgb(197, 194, 7);right: 320px; top: 200px;}
+  100% {background: rgb(252, 59, 0); right: 250px; top :120px;}
+  }
+
+  
+@keyframes circle2 {
+	0%   {background: rgb(124, 40, 25); left: 250px; top: 200px}
+  25%  {background: rgb(74, 75, 72);left: 220px; top:220px;}
+  50%  {background: rgb(7, 175, 197); left: 320px; top:180px;}
+  100% {background: rgb(158, 11, 151); left: 400px; top:100px;}
+  }
+
+  
+@keyframes circle3 {
+	0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; right:200px; top:0px;}
+  50%  {background-color:blue; right:500px; bottom: 200px; top:500px;}
+  75%  {background-color:green; right:0px; top: 400px; bottom:200px;}
+  100% {background-color:red; right:0px; bottom:0px; top: 1000px;}
+  }
+  
+
 .circle1{
 	transform: translate(200px , -50px);
 	height: 360px;
 	width : 360px;
-	background : linear-gradient(90deg , #00ffdd , #2a5353)
+	background : linear-gradient(90deg , #00ffdd , #2a5353);
+	/* New Code */
+	animation: circle1 3s infinite alternate;
 }
 
 .circle2{
 	transform: translate(-160px , 120px);
 	height: 270px;
 	width : 270px;
-	background : linear-gradient(90deg , #ff00b3 , #4a51e2)
+	background : linear-gradient(90deg , #ff00b3 , #4a51e2);
+	/* New Code */
+	animation: circle2 6s infinite alternate;
 }
 
 .circle3{
 	transform: translate(-260px , -160px);
 	height: 150px;
 	width : 150px;
-	background : linear-gradient(90deg , #ff7b00 , #ff0000)
+	background : linear-gradient(90deg , #ff7b00 , #ff0000);
+	/* New Code */
+	animation: circle3 4s infinite alternate;
 }
-
+#login:hover{
+	cursor: pointer;
+	transform: scale(0.9 , 0.9);
+	opacity: 0.5;
+}
 
 #cardKeeper{
 	display:flex;
@@ -97,4 +132,6 @@ body{
 	padding: 5px 25px;
 	margin-left: 34vw;
 	box-shadow: none;
+	/* New Code */
+	transition: 0.3s;
 }

@@ -109,6 +109,7 @@ body{
 	height: 128px;
 	margin-left: 33vw;
 	margin-top: 25px;
+	border-radius: 50%;
 }
 
 #user-name , #password , #login{
